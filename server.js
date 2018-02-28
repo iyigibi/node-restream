@@ -5,7 +5,7 @@ const idGen = require('uuid');
 // const MongoClient = require('mongodb').MongoClient;
 const { MongoClient } = require('mongodb');
 // const assert = require('assert');
-const NODE_PORT = process.env.PORT || 3003
+const NODE_PORT = process.env.PORT || 80
 const app = express();
 // static file server in dir public
 app.use(express.static('public'));
