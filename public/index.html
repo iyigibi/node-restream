@@ -14,16 +14,9 @@
 
 <body>
     <div class="container">
-        <h1>Node-Restream</h1>
+        <h1>SOSYAL MEDYA </h1>
         <div class="row">
-            <div class="col-md-6 col-lg-6">
-                <p>Input Stream URL<br>
-                    <input type="text" id="in-str-url"></input>
-                </p>
-                <p>
-                    <button id="btn-info">Show Info</button>
-                </p>
-            </div>
+            
             <div class="col-md-6 col-lg-6">
                 <span id="stream-info"></span>
                 <!-- <p>Output Stream URL<br>
@@ -32,18 +25,26 @@
             </div>
         </div>
         <hr>
-        <p>Register new stream</p>
-        <p>
-            <input type="text" placeholder="in" id="in-str-url-reg"></input>
-            <input type="text" placeholder="out" id="out-str-url-reg"></input>
-            <input type="text" placeholder="name" id="name-reg"></input>
-            <button id="btn-add-new">AddNew</button>
-            <button id="btn-refrash-list">Refrash</button>
-        </p>
+		<div class="row">
+		<form class="form-horizontal" style="width: 100%;">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="in" id="in-str-url-reg" value="rtmp://wowza.istweb.tv/dp/logosuz"></input>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="KEY" id="out-str-url-reg"></input>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="İSİM" id="name-reg"></input>
+		</div>
+
+            <button id="btn-add-new" class="btn btn-success">Ekle</button>
+            <button id="btn-refrash-list" class="btn btn-info">Yenile</button>
         <p>
             <ul id="stream-list-ul">
             </ul>
         </p>
+		</form>
+		</div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/main.js"></script>

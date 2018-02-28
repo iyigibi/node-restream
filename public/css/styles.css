@@ -1,7 +1,10 @@
-div.container {
-    margin-top: 10%
+div.container-fluid {
+    margin-top: 10
 }
 
 h1 {
     text-align: center
+}
+input {
+	width:%100
 }

@@ -7,7 +7,7 @@
         var dataToMount = '';
         var i;
         for (i = 0; i < data.length; i++) {
-            dataToMount += '<li id="' + data[i].id + '"> Stream name - ' + data[i].name + ' ' + data[i].outputUrl + ' id = ' +
+            dataToMount += '<li id="' + data[i].id + '"> Yayın Adı - ' + data[i].name + ' ' + data[i].outputUrl + ' id = ' +
                 data[i].id + ' <button class="btn-kill" id="' + data[i].id + '"> Kill! </button></li>';
         }
         document.getElementById('stream-list-ul').innerHTML = dataToMount;
