@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.listen(NODE_PORT, () => {
+app.listen(NODE_PORT,'0.0.0.0', () => {
     console.log(`listening on port ${NODE_PORT}!`);
 });
 const registredStream = [];
